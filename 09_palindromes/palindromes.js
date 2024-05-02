@@ -2,15 +2,11 @@ function removePunctuationWordBreaks(word){
     // Ponctuations
     const ponctuations = ['.', ',', ';', '!', '?'];
     ponctuations.forEach(p => {
-        word = word.replaceAll(p, '');
-        console.log(p);
-        console.log(word);
-        
+        word = word.replaceAll(p, ''); 
     });
 
     // Blank Spaces
     word = word.replaceAll(' ', '');
-    console.log('removed blanks: ', word)
 
     return word;
 };
